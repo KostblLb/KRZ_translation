@@ -1,0 +1,8 @@
+<?xml version="1.0" ?><conversation act="two" endingEvent="stop-tape">
+  <scene name="intro" nextScene="end">
+    <triggerEvent name="start-tape"/>    
+    <setGameVar name="museum-talked-to-fred" value="true"/>
+    <line speaker="fred">I heard them banging around out there, and I just stayed quiet. I don't know what they wanted.</line>
+    <line speaker="fred">I just put my headphones on and tried to ignore them, to tell you the truth.</line>
+  </scene>
+</conversation>

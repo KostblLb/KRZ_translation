@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="one">
+    <scene name="intro" nextScene="end">
+      <line>(An old hound in a straw hat. Both have seen better days.)</line>
+    </scene>
+</conversation>

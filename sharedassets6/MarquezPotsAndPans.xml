@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="one">
+  <scene name="intro" nextScene="end">
+    <line>(An abandoned spiderweb stretches across the bottom of a saucepan. A skillet is seasoned with dust.)</line>
+  </scene>
+</conversation>

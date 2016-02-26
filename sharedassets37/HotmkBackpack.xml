@@ -1,0 +1,6 @@
+<?xml version="1.0" ?><conversation act="three">
+  <scene name="intro" nextScene="end">
+    <setGameVar name="hotmk-saw-backpack" value="true"/>
+    <line>(A hiking backpack leans against a rock. It's empty except for a dusty bag of cat food, and a few punch cards.)</line>
+  </scene>
+</conversation>

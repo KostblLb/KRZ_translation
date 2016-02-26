@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="two" endingEvent="cycle-crab-actor">
+  <scene name="intro" nextScene="end">
+    <line>Slice a visage to build a visage. A puzzle to it's owner.</line>
+  </scene>
+</conversation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?><conversation act="three">
+  <scene name="intro" nextScene="end">
+    <setGameVar name="distillery-saw-church-floor" value="true"/>
+    <line>(The church floor is cold metal, scuffed in flecks by unknown bootheels.)</line>
+  </scene>
+</conversation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="one">
+  <scene name="intro" nextScene="end">
+    <line>A tall black oak burns on a hill above the road.</line>
+  </scene>
+</conversation>

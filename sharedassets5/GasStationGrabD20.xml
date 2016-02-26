@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><conversation act="one">
+  <scene name="intro" nextScene="end">
+    <triggerEvent name="grab-d20"/>
+    
+    <line>
+      (*CONWAY* picks up the glowing twenty-sided die and inspects it. The number &quot;five&quot; is facing up. It's just a small piece of plastic, but it has a reassuring, almost comforting weight.
+
+      He places the object in his jacket pocket.)
+    </line>
+  </scene>
+</conversation>

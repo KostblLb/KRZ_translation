@@ -1,0 +1,6 @@
+<?xml version="1.0" ?><conversation act="one">
+    <!-- Init routing -->    
+    <scene name="intro" nextScene="end">
+      <line>(*JOSEPH* sits between gas pumps in a Queen Anne armchair. His hair is gray and his glasses darkened.)</line>
+    </scene>
+</conversation>

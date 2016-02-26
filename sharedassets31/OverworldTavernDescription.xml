@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="three">
+  <scene name="intro" nextScene="end">
+    <line>Neon signs rattle tunelessly in the dark.</line>
+  </scene>
+</conversation>

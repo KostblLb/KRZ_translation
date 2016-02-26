@@ -1,0 +1,102 @@
+<conversation>
+  <scene name="intro">
+    <option goto="leave" condition="act-number=1" insertedText="${template-capture}" center="true"><template name="leave-act1" capture="template-capture" /></option>
+    <option goto="leave" condition="act-number=2" insertedText="${template-capture}" center="true"><template name="leave-act2" capture="template-capture" /></option>
+    <option goto="leave" condition="act-number=3" insertedText="${template-capture}" center="true"><template name="leave-act3" capture="template-capture" /></option>
+    
+    <option goto="end" condition="act-number=1" insertedText="${template-capture-b}" center="true"><template name="stay-act1" capture="template-capture-b" /></option>
+    <option goto="end" condition="act-number=2" insertedText="${template-capture-b}" center="true"><template name="stay-act2" capture="template-capture-b" /></option>
+    <option goto="end" condition="act-number=3" insertedText="${template-capture-b}" center="true"><template name="stay-act3" capture="template-capture-b" /></option>    
+  </scene>
+
+  <scene name="leave" nextScene="end">
+    <triggerEvent name="confirm-leaving" />
+  </scene>
+
+  <templates>
+    <leave-act1>
+      <common>
+        <template xml:space="preserve">`(CONWAY gets back on the road.)`</template>
+        <template xml:space="preserve">`(CONWAY gets back in the truck.)`</template>
+        <template xml:space="preserve">`(CONWAY has places to go.)`</template>
+        <template xml:space="preserve">`(CONWAY doesn't want to stay any longer.)`</template>
+        <template xml:space="preserve">`(CONWAY is ready to leave.)`</template>
+        <template xml:space="preserve">`(CONWAY moves on.)`</template>
+        <template xml:space="preserve">`(CONWAY heads back into the night.)`</template>
+        <template xml:space="preserve">`(It's time to go.)`</template>
+      </common>
+    </leave-act1>
+
+    <stay-act1>
+      <common>
+        <template xml:space="preserve">`(CONWAY sticks around for a bit.)`</template>
+        <template xml:space="preserve">`(CONWAY stays put.)`</template>
+        <template xml:space="preserve">`(CONWAY stays for a while.)`</template>
+        <template xml:space="preserve">`(CONWAY lingers.)`</template>
+        <template xml:space="preserve">`(It's not time to go.)`</template>
+        <template xml:space="preserve">`(There's more to do here.)`</template>
+        <template xml:space="preserve">`(CONWAY slows down a bit.)`</template>
+        <template xml:space="preserve">`(CONWAY takes a minute to think.)`</template>
+        <template xml:space="preserve">`(CONWAY gets distracted.)`</template>
+        <template xml:space="preserve">`(CONWAY has nowhere to go.)`</template>
+      </common>
+    </stay-act1>
+
+    <leave-act2>
+      <common>
+        <template xml:space="preserve">`(They get back on the road.)`</template>
+        <template xml:space="preserve">`(They get back in the truck.)`</template>
+        <template xml:space="preserve">`(They have places to go.)`</template>
+        <template xml:space="preserve">`(They don't want to stay any longer.)`</template>
+        <template xml:space="preserve">`(They are ready to leave.)`</template>
+        <template xml:space="preserve">`(They move on.)`</template>
+        <template xml:space="preserve">`(They head back into the night.)`</template>
+        <template xml:space="preserve">`(It's time to go.)`</template>
+      </common>
+    </leave-act2>
+
+    <stay-act2>
+      <common>
+        <template xml:space="preserve">`(They stick around for a bit.)`</template>
+        <template xml:space="preserve">`(They stay put.)`</template>
+        <template xml:space="preserve">`(They stay for a while.)`</template>
+        <template xml:space="preserve">`(They linger.)`</template>
+        <template xml:space="preserve">`(It's not time to go.)`</template>
+        <template xml:space="preserve">`(There's more to do here.)`</template>
+        <template xml:space="preserve">`(They slow down a bit.)`</template>
+        <template xml:space="preserve">`(They take a minute to think.)`</template>
+        <template xml:space="preserve">`(They get distracted.)`</template>
+        <template xml:space="preserve">`(They have nowhere to go.)`</template>
+      </common>
+    </stay-act2>
+
+    <leave-act3>
+      <common>
+        <template xml:space="preserve">`(They get back on the road.)`</template>
+        <template xml:space="preserve">`(They get back in the truck.)`</template>
+        <template xml:space="preserve">`(They have places to go.)`</template>
+        <template xml:space="preserve">`(They don't want to stay any longer.)`</template>
+        <template xml:space="preserve">`(They are ready to leave.)`</template>
+        <template xml:space="preserve">`(They move on.)`</template>
+        <template xml:space="preserve">`(They head back into the night.)`</template>
+        <template xml:space="preserve">`(It's time to go.)`</template>
+      </common>
+    </leave-act3>
+
+    <stay-act3>
+      <common>
+        <template xml:space="preserve">`(They stick around for a bit.)`</template>
+        <template xml:space="preserve">`(They stay put.)`</template>
+        <template xml:space="preserve">`(They stay for a while.)`</template>
+        <template xml:space="preserve">`(They linger.)`</template>
+        <template xml:space="preserve">`(It's not time to go.)`</template>
+        <template xml:space="preserve">`(There's more to do here.)`</template>
+        <template xml:space="preserve">`(They slow down a bit.)`</template>
+        <template xml:space="preserve">`(They take a minute to think.)`</template>
+        <template xml:space="preserve">`(They get distracted.)`</template>
+        <template xml:space="preserve">`(They have nowhere to go.)`</template>
+      </common>
+    </stay-act3>
+    
+  </templates>
+</conversation>

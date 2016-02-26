@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="three" endingEvent="end-breakdown-conversation">
+  <scene name="intro" nextScene="end">
+    <line>The truck's engine sputters and dies, as Conway guides it carefully off the road next to a fallen tree.</line>
+  </scene>
+</conversation>

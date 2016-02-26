@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><conversation act="two">
+  <scene name="intro" nextScene="end">
+    <setGameVar name="overworld-saw-equus-oils" value="true"/>
+
+    <line>Joseph has fallen asleep in his chair.</line>    
+    <line condition="bureau-talked-to-carrington+carrington-play-location=gasstation">Carrington won't be here for another few hours.</line>
+  </scene>
+
+</conversation>

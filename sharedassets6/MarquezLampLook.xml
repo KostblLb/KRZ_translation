@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="one">
+    <scene name="intro" nextScene="end">
+      <line>(A street lamp lights the base of a dusty path leading up the hill.)</line>
+    </scene>
+</conversation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="two" endingEvent="cycle-crab-actor">
+  <scene name="intro" nextScene="end">
+    <line>This crab is wearing a pencil cup as a shell.</line>
+  </scene>
+</conversation>

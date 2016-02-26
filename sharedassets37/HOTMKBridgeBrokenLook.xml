@@ -1,0 +1,6 @@
+<?xml version="1.0" ?><conversation act="three">
+  <scene name="intro" nextScene="end">
+    <setGameVar name="hotmk-saw-broken-bridge" value="true"/>
+    <line>(The bridge ends abruptly, crumbling in disrepair.)</line>
+  </scene>
+</conversation>

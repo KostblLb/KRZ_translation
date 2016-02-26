@@ -1,0 +1,27 @@
+<?xml version="1.0" ?><conversation act="one">
+  <!-- Init routing -->
+  <scene name="intro">
+    <goto sceneName="just-arrived"/>
+  </scene>
+
+  <!-- Just arrived -->
+  <scene name="just-arrived">
+    <setGameVar name="marquez-farm-arrival-talked-to-dog" value="true"/>
+    
+    <line>(*CONWAY* rubs {if}[dog-nameless]the dog{end}{if}[!dog-nameless]${dog-name}{end}'s belly.)</line>
+
+    <option goto="dark" speaker="conway">Pretty dark out here, huh?</option>
+    <option goto="path" speaker="conway">So I guess we just head up the path here; the farmhouse is up the hill a bit.</option>        
+  </scene>
+
+  <scene name="dark">
+    <option goto="end" speaker="conway">Maybe you'd better stay down here where it's lit.</option>
+    <option goto="end" speaker="conway">Hope I can borrow you a treat up there.</option>      
+  </scene>
+
+  <scene name="path">
+    <option goto="end" speaker="conway">Keep an eye on the truck, alright?</option>      
+    <option goto="end" speaker="conway">Maybe I can borrow you a treat up there.</option>
+  </scene>
+  
+</conversation>

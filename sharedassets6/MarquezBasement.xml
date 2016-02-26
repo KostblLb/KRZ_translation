@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><conversation act="one">
+    <scene name="intro" nextScene="end">
+        <line>(Stacks of boxes climb precariously to the ceiling. A worn writing table in the corner is the only evidence that this basement was ever used as anything but a staging area.)</line>
+    </scene>
+</conversation>
