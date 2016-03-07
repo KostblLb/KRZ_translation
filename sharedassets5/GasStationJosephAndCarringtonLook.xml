@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
   <scene name="intro" nextScene="end">
-    <line>(A man with a large pair of antlers slung over his shoulder is speaking with *JOSEPH*.)</line>
+    <line>(Человек с огромной парой перекинутых через плечо оленьих рогов беседует с *ДЖОЗЕФОМ*.)</line>
   </scene>
 </conversation>

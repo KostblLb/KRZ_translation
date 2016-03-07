@@ -16,90 +16,90 @@
 
   <!-- One -->
   <scene name="gamers-one">
-    <line>(*CONWAY* clears his throat.)</line>
+    <line>(*КОНУЭЙ* прочищает горло.)</line>
     
-    <option goto="gamers-one-b" speaker="conway">Have y'all seen a breaker box down here?</option>
-    <option goto="gamers-one-b" speaker="conway">Oh, sorry, didn't know there was anyone down here.</option>    
+    <option goto="gamers-one-b" speaker="conway">Вы тут щиток с предохранителями не видели?</option>
+    <option goto="gamers-one-b" speaker="conway">Ой, простите, я не знал, что внизу кто-то есть.</option>    
   </scene>
 
   <scene name="gamers-one-b" nextScene="end">
-    <line speaker="emily">`(To BOB)` Did you hear something?</line>
-    <line speaker="bob">`(To EMILY)` Uh, no. Sorry, I was looking at the rules again.</line>
-    <line speaker="ben">`(To BOB)` It gets easier as you go. Look, you said you rolled a &quot;five,&quot; right? That means you get to pick up your marker and move it anywhere on the map.</line>
-    <line speaker="bob">`(To BEN)` So it's your turn now, right?</line>
-    <line speaker="ben">`(To BOB)` Oh, yeah I guess so. Where'd you put that twenty-sided die?</line>
-    <line speaker="emily">I don't see it. Did you drop it?</line>    
-    <line speaker="bob">Uh ... It should be easy enough to find. It glows in the dark.</line>    
+    <line speaker="emily">`(К БОБУ)` Ты ничего не слышал?</line>
+    <line speaker="bob">`(К ЭМИЛИ)` Эм, нет. Извини, я опять смотрел в правила.</line>
+    <line speaker="ben">`(К БОБУ)` Дальше будет легче. Смотри, значит, тебе выпало &quot;пять,&quot; так? Значит, тебе надо взять свою фишку и положить её в любое место на карте.</line>
+    <line speaker="bob">`(К БЕНУ)` Значит, сейчас твой ход, да?</line>
+    <line speaker="ben">`(К БОБУ)` Ну вроде да. Куда ты положил двадцатигранник?</line>
+    <line speaker="emily">Я его не вижу. Может, ты уронил его?</line>    
+    <line speaker="bob">Э-ээ... Его должно быть легко найти. Он светится в темноте.</line>    
   </scene>
 
   <!-- Three -->
   <scene name="gamers-two">
-    <line>(*CONWAY* clears his throat, but gets no response from the people at the table.)</line>
+    <line>(*КОНУЭЙ* прочищает горло, но не слышит реакции.)</line>
 
-    <option goto="gamers-two-b" speaker="conway">I just need to get by you for a minute.</option>
-    <option goto="gamers-two-b" speaker="conway">Did you lose something?</option>
+    <option goto="gamers-two-b" speaker="conway">Мне нужно только пройти через вас на минутку.</option>
+    <option goto="gamers-two-b" speaker="conway">Вы что-то потеряли?</option>
   </scene>
 
   <scene name="gamers-two-b" nextScene="end">
-    <line speaker="bob">`(To EMILY)` I think it rolled down off to the left there, but I don't see it.</line>
-    <line speaker="emily">Well, I'm not going to go looking for it. It's too dark down there.</line>
-    <line speaker="ben">One of you go down and get it, and I'll just ... study the rules here.</line>
+    <line speaker="bob">`(К ЭМИЛИ)` Мне кажется, он укатился налево, но вообще я его там не вижу.</line>
+    <line speaker="emily">Ну, я его туда искать не пойду. Там слишком темно.</line>
+    <line speaker="ben">Кому-то из вас придётся туда пойти, а я пока что ... поизучаю правила.</line>
   </scene>
 
   <!-- Three -->
   <scene name="gamers-three">
-    <line>(*CONWAY* taps his foot, but gets no response from the people at the table.)</line>
+    <line>(*КОНУЭЙ* притопывает ногой, но люди за столиком не обращают на него внимания.)</line>
 
-    <option goto="gamers-three-b" speaker="conway">If I can hit that breaker box I can get the lights back on.</option>
-    <option goto="gamers-three-b" speaker="conway">What kind of game is that?</option>
+    <option goto="gamers-three-b" speaker="conway">Я могу починить свет, если смогу пройти к тому щитку.</option>
+    <option goto="gamers-three-b" speaker="conway">Что это за игра?</option>
   </scene>
 
   <scene name="gamers-three-b" nextScene="end">
-    <line speaker="ben">`(To EMILY)` I think you were right about the instant crisis rolls. There's a whole separate table of them in the back.</line>
-    <line speaker="bob">I don't like that rule anyway; it's not fun, it's just random and frustrating.</line>
-    <line speaker="emily">`(To BOB)` The randomness is what makes it realistic, Bob.</line>
+    <line speaker="ben">`(К ЭМИЛИ)` Думаю, ты была права насчёт тех экстренных сушей быстрого приготовления. Их в подсобке целая куча.</line>
+    <line speaker="bob">Мне всё равно не нравится это правило. Оно скучное, и вообще меня бесит эта случайность.</line>
+    <line speaker="emily">`(К БОБУ)` Вообще-то, Боб, случайность делает игру реалистичнее.</line>
   </scene>
   
   <!-- Four -->
   <scene name="gamers-four">
-    <line>(*CONWAY* clears his throat, but gets no response from the people at the table.)</line>
+    <line>(*КОНУЭЙ* прочищает горло, но люди за столиком не реагируют.)</line>
 
-    <option goto="gamers-four-b" speaker="conway">I really need to get the power back on and make this delivery.</option>
-    <option goto="gamers-four-b" speaker="conway">You seem pretty focused on that game.</option>
+    <option goto="gamers-four-b" speaker="conway">Мне правда нужно включить питание обратно и закончить доставку.</option>
+    <option goto="gamers-four-b" speaker="conway">Похоже, вы очень увлечены игрой.</option>
   </scene>
 
   <scene name="gamers-four-b" nextScene="end">
-    <line speaker="emily">`(To BEN)` I still don't understand how you win.</line>
-    <line speaker="ben">(Reading aloud) Roll the twenty-sided die once for each player, and refer to &quot;Appendix C: Table of Psychogeographical Anxiety/Address Correlations.&quot; Locate the resulting street addresses on the roadmap and move each player marker to the appropriate location.</line>
-    <line speaker="emily">That doesn't help.</line>
-    <line speaker="bob">I don't think you `can` win. It says on the box it's a tragedy.</line>
+    <line speaker="emily">`(К БЕНУ)` Я всё ещё не понимаю, как здесь выиграть.</line>
+    <line speaker="ben">(Читает вслух) Бросьте двадцатигранник один раз для каждого игрока, затем обратитесь к  &quot;Приложению В: Психогеографической таблице соответствий Опасений и Адресов&quot;. Найдите соответствующие адреса на карте и переместите в них фишки игроков.</line>
+    <line speaker="emily">Яснее не стало.</line>
+    <line speaker="bob">Не думаю, что здесь `возможно` выиграть. На коробке написано, что это трагедия.</line>
   </scene>
   
   <!-- Five -->
   <scene name="gamers-five">
-    <line>(*CONWAY* crosses his arms.)</line>
+    <line>(*КОНУЭЙ* скрещивает руки.)</line>
 
-    <option goto="gamers-five-b" speaker="conway">You're not going to let me by, are you?</option>
-    <option goto="gamers-five-b" speaker="conway">You said you're missing a piece?</option>
+    <option goto="gamers-five-b" speaker="conway">Вы меня не пропустите, так ведь?</option>
+    <option goto="gamers-five-b" speaker="conway">Вы сказали, что потеряли деталь?</option>
   </scene>
 
   <scene name="gamers-five-b" nextScene="end">
-    <line speaker="emily">`(To BEN)` OK, so just to get started we need that twenty-sided die.</line>
-    <line speaker="ben">Yeah that gets us on the road. Well, hopefully: if you roll a &quot;one,&quot; you drive into a ditch. If you roll a &quot;two&quot; or a &quot;nine&quot; or a &quot;twelve,&quot; you have to write down a new anxiety and roll again. If you roll a &quot;four,&quot; you get to move your piece anywhere on the map you want.</line>
-    <line speaker="emily">Bob, go get that die.</line>
-    <line speaker="bob">It's too dark down there.</line>
-    <line speaker="ben">`(To BOB)` Well that should make it easy, the damn thing glows in the dark!</line>
+    <line speaker="emily">`(К БЕНУ)` Ладно. Значит, для начала нам нужнн только двадцатигранник.</line>
+    <line speaker="ben">Да, так мы выйдем на дорогу. Ну, я надеюсь. Если выпадет &quot;один&quot;, то ты улетаешь в кювет. Если выпадет &quot;два&quot;, или &quot;девять&quot;, или &quot;двенадцать&quot;, то надо будет записать новое опасение и перебрасывать. Если выпадет &quot;четыре&quot;, то можешь переместить фишку, куда хочешь.</line>
+    <line speaker="emily">Боб, иди принеси кубик.</line>
+    <line speaker="bob">Там слишком темно.</line>
+    <line speaker="ben">`(К БОБУ)` Так ведь так даже лучше. Он же, блин, в темноте светится!</line>
   </scene>
   
   <!-- Last -->
   <scene name="gamers-last">
-    <line>(*CONWAY* knocks on the table, but gets no response from the people at the table.)</line>
+    <line>(*КОНУЭЙ* стучит по столу, но не получает ответа от людей, сидящих за ним.)</line>
 
-    <option goto="gamers-last-b" speaker="conway">If you could just move your chairs a bit, I can scoot right by.</option>
-    <option goto="end" speaker="conway">`(Walks away.)`</option>
+    <option goto="gamers-last-b" speaker="conway">Я тут протиснусь, если вы бы только чуть-чуть подвинулись.</option>
+    <option goto="end" speaker="conway">`(Уходит.)`</option>
   </scene>
 
   <scene name="gamers-last-b" nextScene="end">
-    <line>(*EMILY*, *BEN* and *BOB* argue about the rules of their game and who should be responsible for retrieving their lost game piece, a glow-in-the-dark twenty-sided die.)</line>
+    <line>(*ЭМИЛИ*, *БЕН* и *БОБ* спорят о правилах игры и о том, кто должен идти искать пропавшую деталь из набора, светящийся в темноте двадцатигранник.)</line>
   </scene>
 </conversation>

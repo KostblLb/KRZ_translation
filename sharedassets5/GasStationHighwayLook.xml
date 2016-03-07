@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
     <scene name="intro" nextScene="end">
-      <line>(An interstate highway — sixty-five — running from Alabama up to just shy of Chicago. It ought to be quitting time in this part of Kentucky, but the daylight just won't shake. The sun just won't go away.)</line>
+      <line>(Шестьдесят пятая трасса — проходит от Алабамы почти вплоть до самого Чикако. В этой части Кентуки уже должно смеркаться, но дневной свет неподвижен. Солнце и не думает заходить.)</line>     
     </scene>
 </conversation>

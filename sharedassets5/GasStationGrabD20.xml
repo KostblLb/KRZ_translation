@@ -3,9 +3,9 @@
     <triggerEvent name="grab-d20"/>
     
     <line>
-      (*CONWAY* picks up the glowing twenty-sided die and inspects it. The number &quot;five&quot; is facing up. It's just a small piece of plastic, but it has a reassuring, almost comforting weight.
+      (*КОНУЭЙ* подбирает светящийся двадцатигранник и осматривает его. На верхней грани - цифра &quot;пять&quot;. Это всего лишь кусок пластмассы, но у него очень приятный, почти что успокаивающий вес.
 
-      He places the object in his jacket pocket.)
+      Он кладёт предмет в карман куртки.)
     </line>
   </scene>
 </conversation>

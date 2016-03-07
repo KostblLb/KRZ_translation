@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
   <scene name="intro" nextScene="end">
-    <line>(A moving truck rumbles softly to itself. Painted on its side are the words &quot;Lysette's Antiques. Furniture. Glassware. Curiosities.&quot;)</line>
+    <line>(Грузовик, покачиваясь, мягко тарахтит про себя. Сбоку выкрашена надпись: &quot;Антиквариат Лизетт. Мебель, стеклянные изделия, диковинки.&quot;)</line>
   </scene>
 </conversation>
