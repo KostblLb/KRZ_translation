@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><conversation act="one">
     <!-- Init routing -->    
     <scene name="intro" nextScene="end">
-      <line>(*JOSEPH* sits between gas pumps in a Queen Anne armchair. His hair is gray and his glasses darkened.)</line>
+      <line>(*ДЖОЗЕФ* сидит между бензоколонками в кресле времён Королевы Анны. Это седой человек в тёмных очках.)</line>
     </scene>
 </conversation>

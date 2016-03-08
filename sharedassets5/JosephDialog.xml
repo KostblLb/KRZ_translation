@@ -14,89 +14,89 @@
   <!-- First meeting -->
   <scene name="intro-first-meeting">
     <setGameVar name="met-joseph" value="true"/>
-    <line speaker="joseph">Damn! Did you hear that wreck? Truck full of bottles — I dunno, beer bottles? Whiskey? Lost a tire or something, and spilled booze and glass all over the interstate!</line>
-    <line speaker="joseph">What a mess! I hope they don't come down here looking for anything; we blew a damn fuse and it's all shut off!</line>
-    <line speaker="joseph">Did I hear a dog? What's your dog's name?</line>
+    <line speaker="joseph">Ё-моё! Ты слышал? Грузовик с бутылками — то ли виски, то ли пива — колесо слетело или вроде того. Теперь вся шестьдесят пятая в стекле и бухле!</line>
+    <line speaker="joseph">Ну и дела! Надеюсь, им здесь ничего не понадобится. У нас предохранитель сгорел, теперь ничего не работает!</line>
+    <line speaker="joseph">Это у тебя собака? Как её зовут?</line>
     
-    <option goto="intro-dog-homer" speaker="conway">His name is Homer.</option>
-    <option goto="intro-dog-blue" speaker="conway">Her name is Blue.</option>
-    <option goto="intro-dog-nameless" speaker="conway">Just some dog; I don't know his name.</option>
+    <option goto="intro-dog-homer" speaker="conway">Его зовут Гомер.</option>
+    <option goto="intro-dog-blue" speaker="conway">Её зовут Голубика.</option>
+    <option goto="intro-dog-nameless" speaker="conway">Просто какой-то пёс. Я не знаю, как его зовут.</option>
   </scene>
 
   <scene name="intro-dog-homer" nextScene="intro-blind">
     <setGameVar name="dog-name" value="Homer"/>
     <setGameVar name="dog-nameless" value="false"/>        
     
-    <line speaker="joseph">Bit of a shuffle or a drag in Homer's step — kind of an old one isn't he? Well, I guess he's got some stories then.</line>
+    <line speaker="joseph">Твой Гомер немного шаркает. Он, должно быть, уже старик? Ну, значит, ему есть что рассказать.</line>
   </scene>
 
   <scene name="intro-dog-blue" nextScene="intro-blind">
     <setGameVar name="dog-name" value="Blue"/>
     <setGameVar name="dog-nameless" value="false"/>        
     
-    <line speaker="joseph">Blue sounds like a sweet old hound. I used to know a dog like that.</line>
+    <line speaker="joseph">Звучит как милая старая леди. Я когда-то знал похожую собаку.</line>
   </scene>
 
   <scene name="intro-dog-nameless" nextScene="intro-blind">
     <setGameVar name="dog-name" value="Dog"/>
     <setGameVar name="dog-nameless" value="true"/>
 
-    <line speaker="joseph">Sure. We got a couple old cats that lurk around. Well I bet he's a nice dog, anyway. Well-behaved, or he'd be after my dinner.</line>
+    <line speaker="joseph">Хорошо. У нас найдётся для него пара старых котов где-нибудь. Ну, я полагаю, это хороший пёс. Воспитанный. А то он бы уже охотился за моим ужином.</line>
 
   </scene>
 
   <scene name="intro-blind">
-    <line speaker="joseph">Hey, here's some jerky for {if}[dog-nameless]him{end}{if}[!dog-nameless]${dog-name}{end}. I made it myself! Didn't turn out too well, but I bet a dog will eat it.</line>
+    <line speaker="joseph">Слушай, держи. Пусть {if}[dog-nameless]он{end}{if}[!dog-nameless]${dog-name}{end} попробует вяленого мяса. Я его сам сделал! Вышло не очень, но собаке наверняка понравится.</line>
     
-    <line speaker="joseph">Getting late, right? I can feel the sun on my neck. I bet it's just a few feet off the horizon.</line>
+    <line speaker="joseph">Уже поздно, да? Чувствую, как солнце скользит по шее. Наверное, оно всего в полуметре от горизонта.</line>
 
 
-    <option goto="intro-fascination-destination" speaker="conway">I've been driving all evening looking for &quot;5 Dogwood Drive.&quot;</option>
-    <option goto="intro-fascination-wandering" speaker="conway">I've got a delivery to make on Dogwood, but I'd rather watch the sunset.</option>
+    <option goto="intro-fascination-destination" speaker="conway">Я уже весь день ищу &quot;Собачий Проезд, 5&quot;.</option>
+    <option goto="intro-fascination-wandering" speaker="conway">У меня есть доставка на Собачий, но я лучше посмотрю закат.</option>
   </scene>
 
   <scene name="intro-fascination-destination">
     <setGameVar name="conway-fascination" value="destination"/>
 
 
-    <line speaker="joseph">Hey, I understand: you have got to do the job you're paid to do. Maybe get some rest somewhere in there; maybe have a drink. Then back at it. There's a valor in that rhythm.</line>
+    <line speaker="joseph">Слушай, я понимаю: у тебя есть работа, за которую тебе платят. Можешь вздремнуть здесь где-нибудь, можешь выпить. Потом - обратно за руль. Есть в этом ритме что-то доблестное.</line>
 
 
-    <option goto="intro-address" speaker="conway">So, where is Dogwood Drive?</option>
-    <option goto="intro-joseph-job" speaker="conway">How long have you been working here?</option>
-    <option goto="intro-joseph-fascinated" speaker="conway">What's your rhythm like?</option>
+    <option goto="intro-address" speaker="conway">Так где найти Собачий Проезд?</option>
+    <option goto="intro-joseph-job" speaker="conway">Сколько ты здесь уже работаешь?</option>
+    <option goto="intro-joseph-fascinated" speaker="conway">А какой твой ритм?</option>
   </scene>
 
   <scene name="intro-fascination-wandering">
     <setGameVar name="conway-fascination" value="wandering"/>
 
-    <line speaker="joseph">Yeah, it's the truth: you have got to stop and breathe in that road! I bet while you're out driving you let your eyes wander up the tree line and you just ... well, I bet you're more of a poet than old Joseph!</line>
+    <line speaker="joseph">Правильно делаешь. Нужно просто остановиться и вдохнуть дорогу! Наверняка ты, когда за рулём, даёшь глазам подняться над верхушками деревьев, и ты ... ну, наверное, из тебя поэт лучше, чем из старика Джозефа!</line>
 
     
-    <option goto="intro-address" speaker="conway">So, where is Dogwood Drive?</option>
-    <option goto="intro-joseph-job" speaker="conway">How long have you been working here?</option>
-    <option goto="intro-joseph-fascinated" speaker="conway">Do you like poetry?</option>
+    <option goto="intro-address" speaker="conway">Так где найти Собачий Проезд?</option>
+    <option goto="intro-joseph-job" speaker="conway">Сколько ты здесь работаешь?</option>
+    <option goto="intro-joseph-fascinated" speaker="conway">Ты любишь поэзию?</option>
   </scene>
 
   <scene name="intro-joseph-fascinated" nextScene="intro-address">
 
-    <line speaker="joseph">Oh, I just like to listen to the TV. I used to do a lot of poetry on the computer, but I don't have the ear for it lately.</line>
+    <line speaker="joseph">О, я просто люблю слушать телевизор. Раньше я много сочинял на компьютере, но в последнее время внутри чего-то не хватает.</line>
 
   </scene>
 
   <scene name="intro-joseph-job" nextScene="intro-address">
 
-    <line speaker="joseph">I've been working here a number of years. It's pretty OK. You know, I have an advanced degree and a few publications. It's pretty OK here.</line>
+    <line speaker="joseph">Я работаю здесь уже несколько лет. Вполне неплохо. Знаешь, у меня есть научная степень и несколько публикаций. Здесь вполне неплохо.</line>
 
   </scene>
 
   <scene name="intro-address" nextScene="intro-indicate-door">
 
-    <line speaker="joseph">Listen, you and {if}[dog-nameless]your dog{end}{if}[!dog-nameless]${dog-name}{end} would've been driving up and down sixty-five all night. Dogwood Drive is on the other side of ... well, to get there you've got to take the |Zero|.</line>
+    <line speaker="joseph">Слушай, ты и {if}[dog-nameless]твоя собака{end}{if}[!dog-nameless]${dog-name}{end} всю ночь будете ехать по шестьдесят пятой. Собачий Проезд - по ту сторону ... В общем, чтобы туда попасть, нужно поехать по |Нулевой|.</line>
     
-    <line speaker="joseph">The |Zero| is a tough route to find, but you can use my computer to look up directions. You'll have to head down into the basement and reset the circuit breaker first. I'll be happy to have those whining lights back up anyway; it's too damn quiet out here.</line>
+    <line speaker="joseph">|Нулевую| сложно найти, но можешь поискать направление в моём компьютере. Только тебе сперва надо спуститься в подвал и починить предохранители. Я буду очень рад, если эти воющие огни вернутся. Здесь чертовски тихо.</line>
 
-    <line pause="false" speaker="joseph">The basement door is back there in the office.</line>
+    <line pause="false" speaker="joseph">Дверь в подвал найдёшь в конце офиса.</line>
 
   </scene>
 
@@ -104,7 +104,7 @@
     <triggerEvent name="indicate-basement-door"/>
     
 
-    <line pause="false" speaker="joseph">Appreciate your help, friend. Oh, and here:</line>
+    <line pause="false" speaker="joseph">Спасибо за помощь, друг. Да, и вот ещё:</line>
 
   </scene>
 
@@ -113,46 +113,46 @@
     <triggerEvent name="joseph-hands-light-to-conway"/>
     
 
-    <line speaker="joseph">Take this lamp. It gets dark.</line>
+    <line speaker="joseph">Возьми эту лампу. Становится темно.</line>
 
   </scene>
 
   <!-- Returning before breaker has been flipped -->
   <scene name="still-need-to-reset-breaker">
 
-    <line speaker="joseph">Just head back into the office and you can't miss the stairs. The breaker box'll be somewhere on the right side of the room down there.</line>
+    <line speaker="joseph">Просто иди через офис, лестницу вниз не пропустишь. Предохранительный щит должен быть в подвале где-то справа.</line>
 
 
-    <option goto="why-cant-joseph-fix-lights" speaker="conway">Why can't you fix the lights yourself?</option>
-    <option condition="entered-basement" goto="cant-find-breaker" speaker="conway">I can't find the breaker box down there.</option>
-    <option condition="met-gamers" goto="met-gamers" speaker="conway">There are some people in your basement, playing some kind of game.</option>    
-    <option goto="still-need-to-reset-breaker-end" speaker="conway">Alright, I'll do it now.</option>
+    <option goto="why-cant-joseph-fix-lights" speaker="conway">Почему бы тебе самому не починить свет?</option>
+    <option condition="entered-basement" goto="cant-find-breaker" speaker="conway">Я не могу найти щиток.</option>
+    <option condition="met-gamers" goto="met-gamers" speaker="conway">У тебя в подвале сидят какие-то люди. Играют в какую-то игру.</option>    
+    <option goto="still-need-to-reset-breaker-end" speaker="conway">Ладно, сейчас сделаю.</option>
   </scene>
 
   <scene name="met-gamers" nextScene="end">
     <setGameVar name="gas-station-asked-joseph-about-gamers" value="true"/>
-    <line speaker="joseph">In the basement? No, I don't think so. Maybe that lamplight is playing tricks on you.</line>
+    <line speaker="joseph">В подвале? Нет, там никого не должно быть. Наверное, это всё иллюзии от освещения.</line>
   </scene>
   
   <scene name="cant-find-breaker" nextScene="end">
 
-    <line speaker="joseph">Huh. I dunno what to tell you. You've got a light and everything. I'm always just down there in the dark, and I have no problems finding it. Well, I appreciate you keeping at the task!</line>
+    <line speaker="joseph">Хм. Даже не знаю, что сказать. У тебя есть и лампа, и всё, что надо. Я всегда без проблем нахожу его в темноте. Но я рад, что ты не сдаёшься перед задачей!</line>
 
   </scene>
 
   <scene name="why-cant-joseph-fix-lights" nextScene="end">
 
-    <line speaker="joseph">Well, it's true: I know that basement pretty well. But last time I got to repair work down there, I crossed the wrong wire and took out half the traffic lights in Elizabethtown!</line>
+    <line speaker="joseph">Да, ты прав, я хорошо ориентируюсь в подвале. Но в последний раз, когда я занимался там починкой, я замкнул не тот провод и вырубил половину дорожных фонарей в Элизабеттауне!</line>
 
-    <line speaker="joseph">It's that damn electric company, &quot;Consolidated.&quot; They plug everything together on one big grid. Too many eggs in the damn basket!</line>
+    <line speaker="joseph">Всё из-за этих паршивых &quot;Объединённых&quot; энергетиков. Они просто всё подключают к одной большой сети. Слишком много хотят, чёрт возьми!</line>
 
-    <line speaker="joseph">So now I'm a little circuit-shy, is all. Anyhow, I appreciate your help.</line>
+    <line speaker="joseph">Так что я теперь немного стесняюсь проводов. Но в любом случае, спасибо за помощь.</line>
 
   </scene>
 
   <scene name="still-need-to-reset-breaker-end" nextScene="end">
 
-    <line speaker="joseph">Many thanks.</line>
+    <line speaker="joseph">Премного благодарен.</line>
 
   </scene>
 
@@ -165,27 +165,27 @@
   <scene name="first-reset-breaker">
     <setGameVar name="joseph-computer-active" value="true"/>
 
-    <line speaker="joseph">There it is. Just listen to those lights whine. Yep ...</line>
+    <line speaker="joseph">Наконец-то. Просто прислушайся к голосу ламп ...</line>
 
-    <option goto="introduce-password" speaker="conway">Well, I'd better get those directions and head to the |Zero|, if you don't mind.</option>
-    <option goto="gamers-recap" speaker="conway">There were some people down in your basement playing some kind of game, but they're gone now.</option>    
+    <option goto="introduce-password" speaker="conway">Ну, пожалуй, я возьму направления и отправлюсь на |Нулевую|.</option>
+    <option goto="gamers-recap" speaker="conway">У тебя внизу были какие-то люди. Они во что-то играли, но потом исчезли.</option>    
   </scene>
 
   <scene name="gamers-recap" nextScene="introduce-password">
-    <line condition="!gas-station-asked-joseph-about-gamers" speaker="joseph">In the basement? No, I don't think so. Maybe that lamplight was playing tricks on you, huh?</line>
-    <line condition="gas-station-asked-joseph-about-gamers" speaker="joseph">So, you insist on it, do you? Alright ...</line>
-    <line speaker="joseph">Well, strange things happen underground. Especially in the dark ...</line>
+    <line condition="!gas-station-asked-joseph-about-gamers" speaker="joseph">В подвале? Нет, там никого не должно быть. Наверное, это всё иллюзии от освещения.</line>
+    <line condition="gas-station-asked-joseph-about-gamers" speaker="joseph">Ты всё ещё в этом так уверен? Ладно ...</line>
+    <line speaker="joseph">Что ж, под землёй творится много странного. Особенно в темноте ...</line>
   </scene>
   
   <scene name="introduce-password" nextScene="end">
-    <line speaker="joseph">So! Computer's in the office. You're looking for &quot;Márquez.&quot; She knows her way around those roads; she'll get you to the |Zero|. The password is ... uh ... damn. I usually just feel it out. &quot;Muscle memory,&quot; you know?</line>
-    <line speaker="joseph">It's kinda long, kinda like a short poem, I think. One of those short poems that really sums it all up.</line>
-    <line speaker="joseph">You'll figure it out.</line>
+    <line speaker="joseph">Так! Компьютер стоит в офисе. Тебе нужно искать &quot;Маркез&quot;. Она хорошо знает местные дороги, должна привести тебя к |Нулевой|. Пароль ... эм ... чёрт. Я обычно просто чувствую его. Слышал о &quot;мышечной памяти&quot;?</line>
+    <line speaker="joseph">Он довольно длинный, что-то вроде небольшого стиха. Из тех коротких стихов, которые раскрывают смысл.</line>
+    <line speaker="joseph">Ты поймёшь, что к чему.</line>
   </scene>
 
   <scene name="computer-not-accessed-yet" nextScene="end">
 
-    <line speaker="joseph">No luck with that computer password? Maybe you're going too fast; don't force it, now. Just try to think like a poet.</line>
+    <line speaker="joseph">Не получается с паролем? Ты не торопись, пусть всё идёт своим ходом. Просто попробуй думать как поэт!</line>
 
   </scene>
 
@@ -195,159 +195,159 @@
   </scene>
 
   <scene name="small-talk" nextScene="end">
-    <line speaker="joseph">Sun's gone down; you and {if}[dog-nameless]your dog{end}{if}[!dog-nameless]${dog-name}{end} better get on that road if you're gonna make your delivery!</line>
+    <line speaker="joseph">Солнце уже село. Ты и {if}[dog-nameless]твой пёс{end}{if}[!dog-nameless]${dog-name}{end} лучше бы поторопились, если хотите доставить вовремя!</line>
   </scene>
 
   <!-- Returning to the gas station later -->
   <scene name="returning-to-gas-station">
-    <line speaker="joseph">Well, here you are.</line>
+    <line speaker="joseph">О, ты вернулся.</line>
 
-    <option condition="read-shannons-note-at-workshop+!met-shannon+!asked-joseph-about-mine" goto="mine-location" speaker="conway">Do you know where an old mine is around here?</option>
-    <option condition="marquez-farm-weaver-gone+!joseph-talked-about-weaver+!met-shannon" goto="met-weaver" speaker="conway">Met your friend Weaver.</option>
-    <option condition="overworld-visited-museum+!joseph-talked-about-museum" goto="museum" speaker="conway">Ran across a strange museum up north a bit.</option>
-    <option condition="found-josephs-game-in-archive+!joseph-talked-about-game-in-archive" goto="found-archive" speaker="conway">Found your game in that museum's archives.</option>
-    <option condition="met-carrington-and-then-left-gas-station+!joseph-talked-about-carrington" goto="where-is-carrington" speaker="conway">Where did Mr. Carrington go?</option>
-    <option condition="!joseph-talked-about-work" goto="here-i-am" speaker="conway">Here I am.</option>
-    <option goto="end" speaker="conway">Better get going, though.</option>
+    <option condition="read-shannons-note-at-workshop+!met-shannon+!asked-joseph-about-mine" goto="mine-location" speaker="conway">Не знаешь, где находится старая шахта?</option>
+    <option condition="marquez-farm-weaver-gone+!joseph-talked-about-weaver+!met-shannon" goto="met-weaver" speaker="conway">Встретился с твоей подругой Уивер.</option>
+    <option condition="overworld-visited-museum+!joseph-talked-about-museum" goto="museum" speaker="conway">Наткнулся на странный музей к северу отсюда.</option>
+    <option condition="found-josephs-game-in-archive+!joseph-talked-about-game-in-archive" goto="found-archive" speaker="conway">Нашёл ту игру в архивах музея.</option>
+    <option condition="met-carrington-and-then-left-gas-station+!joseph-talked-about-carrington" goto="where-is-carrington" speaker="conway">Куда ушёл Каррингтон?</option>
+    <option condition="!joseph-talked-about-work" goto="here-i-am" speaker="conway">Вот я и вернулся.</option>
+    <option goto="end" speaker="conway">Уже пора снова выдвигаться.</option>
   </scene>
 
   <!-- Talking about work -->
   <scene name="here-i-am">
     <setGameVar name="joseph-talked-about-work" value="true"/>
-    <line speaker="joseph">Yep. I'm hard at work, as you can see. Now, don't distract me! Ha!</line>
-    <line speaker="joseph">You like your work?</line>
+    <line speaker="joseph">Ага. Я, видишь ли, очень занятой человек. Не отвлекай меня от работы! Ха!</line>
+    <line speaker="joseph">Ты любишь свою работу?</line>
 
-    <option goto="work-options" speaker="conway">I haven't got a lot of options.</option>    
-    <option goto="work-ditch" speaker="conway">It's better than being in a ditch.</option>
+    <option goto="work-options" speaker="conway">Не то чтобы у меня был выбор.</option>    
+    <option goto="work-ditch" speaker="conway">Всё лучше, чем валяться в канаве.</option>
   </scene>
 
   <scene name="work-ditch" nextScene="end">
-    <line speaker="joseph">Ha! I bet you always say that. Like a reflex. When people ask about my work, I always say &quot;it's pretty OK.&quot; That way I don't have to think about it.</line>
+    <line speaker="joseph">Ха! Должно быть, ты всем это говоришь. На автомате. Когда меня спрашивают про работу, я всегда отвечаю: &quot;Вполне неплохо&quot;. Так мне не нужно об этом думать.</line>
   </scene>
 
   <scene name="work-options" nextScene="end">
-    <line speaker="joseph">Well, who has options these days? You know I went to college for almost twelve years? I have an advanced degree in electronic writing.</line>
-    <line speaker="joseph">But I guess I took the low road, in the end.</line>
+    <line speaker="joseph">Ну а у кого сейчас есть выбор? Знаешь, я почти двенадцать лет получал высшее образование. У меня есть степень по электронной литературе.</line>
+    <line speaker="joseph">Но в конце концов, похоже, моя дорога пошла под уклон.</line>
   </scene>
 
   <!-- Talking about museum -->
   <scene name="museum" nextScene="end">
     <setGameVar name="joseph-talked-about-museum" value="true"/>
     
-    <line speaker="joseph">Oh, that old place. I heard they keep a huge archive.</line>
-    <line speaker="joseph">Hey next time you're up there, take a look in the archive room and see if you can find any of my old work on file. It'll be under &quot;Wheatree,&quot; that's my last name. &quot;Wheatree.&quot; The archive is just through the Hall of Glass. It's these big plastic doors, kinda hard to spot, but the texture is a bit different than the rest of the walls.</line>
+    <line speaker="joseph">А, это старое место. Я слышал, у них очень большой архив.</line>
+    <line speaker="joseph">Слушай, когда будешь там в другой раз, посмотри, нет ли там каких-нибудь моих старых работ. Они должны быть в разделе &quot;Уитри&quot;, это моя фамилия. &quot;Уитри&quot;. Архив - сразу после Стеклянного Зала. Там большие пластиковые двери, которые трудно заметить, но вообще у них поверхность слегка отличается от остальной стены.</line>
   </scene>
 
   <scene name="found-archive" nextScene="end">
     <setGameVar name="joseph-talked-about-game-in-archive" value="true"/>
 
-    <line speaker="joseph">Yeah? `If I Had My Way, I'd Tear the Building Down`? They still have that? Well, damn.</line>
-    <line speaker="joseph">You know, I think that's about the best thing I ever did. Nobody's played it. Someday I'll have to tell you about my friend Donald. We worked together on that one. Half way through, we kinda fell out. So that's why the game ends so weird. You know ... one day I'll have to tell you about that.</line>
+    <line speaker="joseph">Правда? `Моя Бы Воля - Я Бы Разнёс Весь Дом`? Они её ещё хранят? Ничего себе.</line>
+    <line speaker="joseph">Знаешь, мне кажется, это лучшее, что я придумал в своей жизни. Никто в неё не играл. Когда-нибудь я тебе расскажу про своего друга Дональда. Мы над ней вместе работали. Правда, мы разошлись на полпути, поэтому игра так странно заканчивается. Знаешь ... однажды я тебе расскажу про неё.</line>
   </scene>
   
   <!-- Talking about meeting weaver -->
   <scene name="met-weaver">
     <setGameVar name="joseph-talked-about-weaver" value="true"/>
     
-    <line speaker="joseph">Huh. Now ... you say you met her? She was there?</line>
+    <line speaker="joseph">Хм. Говоришь, что ... ты видел её? Она была там?</line>
 
-    <option goto="met-weaver-she-left" speaker="conway">Just for a minute, then she left suddenly.</option>    
-    <option goto="met-weaver-surprised" speaker="conway">Yeah she was there. You're surprised?</option>
+    <option goto="met-weaver-she-left" speaker="conway">Была где-то с минуту, но потом исчезла.</option>    
+    <option goto="met-weaver-surprised" speaker="conway">Да, она была там. Ты удивлён?</option>
   </scene>
 
   <scene name="met-weaver-she-left" nextScene="weaver-history">
-    <line speaker="joseph">OK. I guess she had somewhere to be. I wouldn't take it personally. It's good that you met her.</line>
+    <line speaker="joseph">Ну. Видимо, ей надо всё-таки где-то быть. Не принимай близко к сердцу. Хорошо, что ты её встретил.</line>
   </scene>
   
   <scene name="met-weaver-surprised" nextScene="weaver-history">
-    <line speaker="joseph">Huh. No, I guess I'm not surprised. It's good that you met her.</line>
+    <line speaker="joseph">Э-эм, нет. Пожалуй, я не удивлён. Хорошо, что ты её встретил.</line>
   </scene>
 
   <scene name="weaver-history" nextScene="end">
-    <line speaker="joseph">I knew the Márquez family years ago, when Weaver was a young girl, and her parents were studying local folk songs. Smart family. Well, some of them are smart, and the rest are wise, if you know what I mean.</line>
-    <line speaker="joseph">They hit some trouble a while back, and it kind of tore them all up. But, you know, everyone hits trouble at some point or another. Well, not everyone, but most of us do.</line>
-    <line speaker="joseph">Hey, if you see Weaver Márquez again ... tell her I'm sorry about her aunt and uncle, and I hope I'll be seeing her soon.</line>
-    <line speaker="joseph">Many thanks.</line>
+    <line speaker="joseph">Я много лет знал Маркезов, Уивер тогда была ещё совсем малышкой. Её родители изучали песни местного народа. Все умные. Ну, некоторые умные, остальные - мудрые, если ты понимаешь, о чём я.</line>
+    <line speaker="joseph">У них случилась беда в прошлом, теперь они разобщились. Но знаешь, с каждым такое бывает рано или поздно. Ну, не с каждым, но с большинством точно.</line>
+    <line speaker="joseph">Слушай, если увидишь Уивер Маркез опять ... Передай, что я сожалею о её тёте и дяде и что надеюсь увидеть снова.</line>
+    <line speaker="joseph">Премного благодарен.</line>
   </scene>
 
   <!-- Asking about mine -->
   <scene name="mine-location" nextScene="end">
     <setGameVar name="asked-joseph-about-mine" value="true"/>
-    <line speaker="joseph">Around here? Hm ... I guess not.</line>
-    <line speaker="joseph">Oh, unless you're thinking of the old Eklhorn Mine? That's over north-east of here, on Hardyville. But you can't get in there anymore. It's all fenced up ... they had an accident.</line>
+    <line speaker="joseph">Шахта? Здесь? Хм ... Нет, не знаю.</line>
+    <line speaker="joseph">А, ты, наерное, говоришь про старую Лосиную Шахту? Это на северо-восток отсюда, в Хардивилле. Но теперь туда нельзя попасть, она вся обнесена. Там было ... происшествие.</line>
   </scene>
 
   <!-- Carrington -->
   <scene name="where-is-carrington" nextScene="end">
     <setGameVar name="joseph-talked-about-carrington" value="true"/>
 
-    <line speaker="joseph">Oh yeah, his tow truck came so he gassed up and left. He's awfully proud of that car.</line>
-    <line speaker="joseph">Yeah I guess he's back out looking for a venue. He said he hoped to run into you again, though. Or maybe we'll hear about it on the radio; I'll keep an ear on it for you!</line>
+    <line speaker="joseph">О, там приехал его буксир, так что он просто заправился и уехал. Он обожает эту машину.</line>
+    <line speaker="joseph">Думаю, он поехал искать место. Сказал, что надеется тебя снова встретить. Может, мы услышим про него по радио. Буду держать ухо востро!</line>
   </scene>
 
   <!-- With Shannon -->
   <scene name="returning-to-gas-station-with-shannon">
-    <line speaker="joseph">Who's that?</line>
+    <line speaker="joseph">Кто это?</line>
 
-    <option goto="returning-to-gas-station" speaker="conway">It's me.</option>
-    <option condition="!shannon-met-joseph" goto="shannon-hub-first-time" speaker="shannon">It's me.</option>
-    <option condition="shannon-met-joseph" goto="shannon-hub" speaker="shannon">It's me.</option>    
+    <option goto="returning-to-gas-station" speaker="conway">Это я.</option>
+    <option condition="!shannon-met-joseph" goto="shannon-hub-first-time" speaker="shannon">Это я.</option>
+    <option condition="shannon-met-joseph" goto="shannon-hub" speaker="shannon">Это я.</option>    
   </scene>
 
   <scene name="shannon-hub-first-time" nextScene="shannon-hub">
     <setGameVar name="shannon-met-joseph" value="true"/>
     
-    <line speaker="joseph">Oho! That sounds like one of the Márquez ladies. Well, I know it's not Remedios — she's back out in Knoxville these days — so ...</line>
+    <line speaker="joseph">Ого! Да это же, небось, госпожа Маркез! Ну, это точно не Ремедиоз - она сейчас в Ноксвилле, так что ...</line>
   </scene>
   
   <scene name="shannon-hub">
-    <line speaker="joseph">Hello, Shannon. How's the economy treating you?</line>
+    <line speaker="joseph">Здравствуй, Шеннон. Экономика тебя радует?</line>
 
-    <option condition="!shannon-told-joseph-about-work" goto="shannon-work" speaker="shannon">It's not great.</option>
-    <option condition="!shannon-asked-joseph-about-zero" goto="shannon-zero" speaker="shannon">My friend is looking for the |Zero|, do you know how to get there?</option>
-    <option goto="end" speaker="shannon">Nice to see you, Joseph. Don't work too hard.</option>
+    <option condition="!shannon-told-joseph-about-work" goto="shannon-work" speaker="shannon">Не в восторге.</option>
+    <option condition="!shannon-asked-joseph-about-zero" goto="shannon-zero" speaker="shannon">Мой друг ищет |Нулевую|. Не знаешь, как туда попасть?</option>
+    <option goto="end" speaker="shannon">Приятно было повидаться, Джозеф. Не перенапрягайся.</option>
   </scene>
 
   <scene name="shannon-work">
     <setGameVar name="shannon-told-joseph-about-work" value="true"/>
     
-    <line speaker="joseph">No, I guess it isn't. Hell, they got me working days and nights! But at least people still need gas.</line>
-    <line speaker="joseph">Kinda different in your line of work, isn't it? Well, I'm sure they'll come around. Maybe some old TV show will get popular, and everyone will want old TVs again.</line>
+    <line speaker="joseph">Да, я тоже. Чёрт возьми, у меня смены теперь и днём, и ночью! Хорошо, что людям всё ещё нужно заправляться.</line>
+    <line speaker="joseph">В твоей области всё по-другому, да? Ну, я думаю, будут ещё клиенты. Может, воскреснет какое-нибудь старое телешоу, и всем снова будут нужны старые телевизоры.</line>
 
-    <option goto="end" speaker="shannon">That's not really ... how it works.</option>
-    <option goto="end" speaker="shannon">Yeah. Maybe.</option>
+    <option goto="end" speaker="shannon">На самом деле там всё не так ... устроено.</option>
+    <option goto="end" speaker="shannon">Ага. Наверное.</option>
   </scene>
 
   <scene name="shannon-zero">
     <setGameVar name="shannon-asked-joseph-about-zero" value="true"/>    
 
-    <line speaker="joseph">Oh yeah, that old delivery driver ... What do you think of that guy anyway, just between us?</line>
+    <line speaker="joseph">А, этот пожилой курьер ... Что ты о нём думаешь? Только между нами.</line>
 
-    <option goto="conway-smells-like-leather" speaker="shannon">He smells like leather.</option>
-    <option goto="conway-is-shaky" speaker="shannon">His hands shake when he's not using them.</option>
-    <option condition="!shannon-will-drive" goto="conway-is-sleepy" speaker="shannon">Sometimes I think he's half-asleep at the wheel.</option>
+    <option goto="conway-smells-like-leather" speaker="shannon">От него пахнет кожей.</option>
+    <option goto="conway-is-shaky" speaker="shannon">Его руки трясутся, когда ничего не держат.</option>
+    <option condition="!shannon-will-drive" goto="conway-is-sleepy" speaker="shannon">Иногда мне кажется, что он дремлет за рулём.</option>
   </scene>
 
   <scene name="conway-smells-like-leather" nextScene="joseph-tells-shannon-about-zero">
     <setGameVar name="shannon-impression-of-conway" value="smell"/>
 
-    <line speaker="joseph">Well, a lot of drivers keep one arm out in the sun all day.</line>
-    <line speaker="joseph">Could be worse, I guess. There's a cable guy comes through here pretty regular, and he smells like warmed-up fish food.</line>
+    <line speaker="joseph">Ну, многие водители любят высовывать одну руку за окно во время езды.</line>
+    <line speaker="joseph">Но вообще могло быть и хуже. Сюда довольно часто заезжает один кабельщик, так от него пахнет разогретой рыбной выпечкой.</line>
   </scene>
 
   <scene name="conway-is-shaky" nextScene="joseph-tells-shannon-about-zero">
     <setGameVar name="shannon-impression-of-conway" value="shaky"/>
 
-    <line speaker="joseph">Yeah, it happens. Too much nerves, or too much drink ...</line>
+    <line speaker="joseph">Да, такое бывает. Слишком много нервов. Или выпивки ...</line>
   </scene>
 
   <scene name="conway-is-sleepy" nextScene="joseph-tells-shannon-about-zero">
     <setGameVar name="shannon-impression-of-conway" value="tired"/>
 
-    <line speaker="joseph">Well, he's no spring chicken. But also ... the road can do that. It's hypnotic: puts you into a kind of a highway fugue. I've had customers through here that couldn't say a word ... I swear they were sleepwalking!</line>
+    <line speaker="joseph">Ну, он уже не зелёный юнец. Вообще ... такое может быть и от дороги. Она очаровывает, затягивает тебя в эдакую шоссейную мелодию. У меня были клиенты, которые вообще ни слова не могли проронить ... Они точно ходили во сне, вот те крест!</line>
   </scene>
 
   <scene name="joseph-tells-shannon-about-zero" nextScene="end">
-    <line speaker="joseph">Well, it's like I told him: I can't get you folks to the |Zero|. But I bet you can get there. Especially now, with the two of you.</line>
+    <line speaker="joseph">Ну, как я уже говорил твоему другу, я не могу привести вас к |Нулевой|. Но я уверен, что вы доберётесь. Особенно когда вас двое.</line>
   </scene>
 </conversation>
