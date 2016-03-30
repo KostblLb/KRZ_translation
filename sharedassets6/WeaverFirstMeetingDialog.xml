@@ -1,36 +1,36 @@
 <?xml version="1.0" ?><conversation act="one">
   <!-- First meeting -->
   <scene name="intro">
-    <line speaker="weaver">I was just thinking what a lovely house we have. Do you like it? Have you been here before? Did you happen to see an owl?</line>
+    <line speaker="weavr">Я как раз думала о том, какой у нас замечательный дом. Ты бывал здесь раньше? Ты видел сов?</line>
 
-    <option goto="intro-nice-house" speaker="conway">Sure, it's a nice house.</option>
-    <option goto="intro-never-been-here" speaker="conway">No, I've never been here before.</option>
-    <option goto="intro-no-owl" speaker="conway">I didn't see any owl.</option>
+    <option goto="intro-nice-house" speaker="conway">Это определённо красивый дом.</option>
+    <option goto="intro-never-been-here" speaker="conway">Нет, я здесь никогда не был.</option>
+    <option goto="intro-no-owl" speaker="conway">Я не видел сов.</option>
   </scene>
 
   <scene name="intro-nice-house" nextScene="intro-what-do-you-do">
-    <line speaker="weaver">I know. I like the large beams that run across the ceilings. I like to sit in the house and think of the hills and bluffs surrounding us, like a ... like a cradle.</line>
+    <line speaker="weaver">Знаю. Мне нравятся эти большие балки под потолками. Я люблю сидеть в доме и думать о холмах и утёсах, что окружают нас, как ... как в колыбели.</line>
   </scene>
 
   <scene name="intro-never-been-here" nextScene="intro-what-do-you-do">
-    <line speaker="weaver">I know. It must seem very strange to you. I was here when this house was built, so it's never been strange to me.</line>
+    <line speaker="weaver">Знаю. Тебе он, наверное, кажется странным. Я была здесь, когда этот дом построили. Так что мне он привычен.</line>
   </scene>
 
   <scene name="intro-no-owl" nextScene="intro-what-do-you-do">
-    <line speaker="weaver">I know. I saw it out the window once. Big, ugly thing. All sound and fury. Well, it's gone now.</line>
+    <line speaker="weaver">Знаю. Я как-то одну увидела из окна. Большая, страшная. Вся в пуху, ухает. Ну, больше её здесь нет.</line>
   </scene>
 
   <scene name="intro-what-do-you-do">
-    <line speaker="weaver">There used to be another house here. But we had it destroyed. And we built this one. It was very expensive and we got quite under water.</line>
-    <line speaker="weaver">What do you do for work? Is it too difficult or do you like it very much? I was once a mathematician. Are you looking for something in particular here?</line>
+    <line speaker="weaver">Здесь раньше был другой дом. Но мы снесли его. А потом построили этот. Это нам влетело в копеечку, так что пришлось на время залечь на дно.</line>
+    <line speaker="weaver">Чем на жизнь зарабатываешь? Любишь свою работу или она слишком сложная? Я раньше была математиком. Тебе нужно что-то конкретное?</line>
 
-    <option goto="intro-deliveries" speaker="conway">I drive deliveries for a small antique shop.</option>
-    <option goto="intro-in-a-ditch" speaker="conway">It's better than being in a ditch.</option>
-    <option goto="intro-the-zero" speaker="conway">I'm looking for the |Zero|.</option>
+    <option goto="intro-deliveries" speaker="conway">Я доставляю антиквариат из одного маленького магазина.</option>
+    <option goto="intro-in-a-ditch" speaker="conway">Всё лучше, чем спать в канаве.</option>
+    <option goto="intro-the-zero" speaker="conway">Я ищу |Нулевую|.</option>
   </scene>
 
   <scene name="intro-deliveries" nextScene="intro-stay-here">
-    <line speaker="weaver">I believe it's hard times for a small antique shop. It's hard times everywhere, even out here on our little farm. My parents stopped paying the bank a while back. I shouldn't even be here. But I just stayed.</line>
+    <line speaker="weaver">Тяжёлые нынче времена для маленького антикварного магазинчика. Что там - везде тяжёлые времена, даже для этой фермы. Родители какое-то время назад перестали платить банку. Мне здесь даже быть нельзя. Но я всё равно осталась.</line>
   </scene>
 
   <scene name="intro-in-a-ditch" nextScene="intro-stay-here">

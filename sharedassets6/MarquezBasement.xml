@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
     <scene name="intro" nextScene="end">
-        <line>(Stacks of boxes climb precariously to the ceiling. A worn writing table in the corner is the only evidence that this basement was ever used as anything but a staging area.)</line>
+        <line>(Стопки коробок возвышаются до самого потолка. Изношенный письменный стол в углу служит доказательством того, что подвал всегда был предназначен только для складирования вещей.)</line>
     </scene>
 </conversation>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
   <scene name="intro" nextScene="end">
-    <line>(A family graveyard is set off to the side of the house. Headstones are inscribed with the surnames of the unfortunate: &quot;Nowakowski,&quot; &quot;Padilla,&quot; &quot;Márquez&quot;)</line>
+    <line>(Рядом с домом обустроено семейное кладбище. На надгробиях высечены имена усопших: &quot;Новаковский&quot;, &quot;Падилла&quot;, &quot;Маркез&quot;).</line>
   </scene>
 </conversation>

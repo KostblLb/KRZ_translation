@@ -11,8 +11,8 @@
   <scene name="user-prompt">
     <line speaker="computer">~Пользователь.~</line>
 
-    <option goto="user-conway" speaker="conway">`(Typing)` ~Конуэй.~</option>
-    <option goto="password-1" speaker="conway">`(Typing)` ~Джозеф.~</option>
+    <option goto="user-conway" speaker="conway">`(Печатает)` ~Конуэй.~</option>
+    <option goto="password-1" speaker="conway">`(Печатает)` ~Джозеф.~</option>
   </scene>
 
   <scene name="user-conway" nextScene="user-prompt">
@@ -22,21 +22,21 @@
   <scene name="password-1">
     <line speaker="computer">~Пароль.~</line>
 
-    <option goto="password-2" speaker="conway">`(Typing)` ~Колесо слетело на ходу.~</option>
-    <option goto="password-2" speaker="conway">`(Typing)` ~Звёзды опадают с неба.~</option>
-    <option goto="password-2" speaker="conway">`(Typing)` ~Я говорю и слушаю его голос.~</option>
+    <option goto="password-2" speaker="conway">`(Печатает)` ~Колесо слетело на ходу.~</option>
+    <option goto="password-2" speaker="conway">`(Печатает)` ~Звёзды опадают с неба.~</option>
+    <option goto="password-2" speaker="conway">`(Печатает)` ~Я говорю и слушаю его голос.~</option>
   </scene>
 
   <scene name="password-2">
-    <option goto="password-3" speaker="conway">`(Typing)` ~Происшествия никто не заметил.~</option>
-    <option goto="password-3" speaker="conway">`(Typing)` ~Луна пульсирует.~</option>
-    <option goto="password-3" speaker="conway">`(Typing)` ~Уже поздно.~</option>
+    <option goto="password-3" speaker="conway">`(Печатает)` ~Происшествия никто не заметил.~</option>
+    <option goto="password-3" speaker="conway">`(Печатает)` ~Луна пульсирует.~</option>
+    <option goto="password-3" speaker="conway">`(Печатает)` ~Уже поздно.~</option>
   </scene>
 
   <scene name="password-3">
-    <option goto="password-complete" speaker="conway">`(Typing)` ~Ты вдыхаешь дорогу.~</option>
-    <option goto="password-complete" speaker="conway">`(Typing)` ~Огни завывают.~</option>
-    <option goto="password-complete" speaker="conway">`(Typing)` ~Станет только позднее.~</option>
+    <option goto="password-complete" speaker="conway">`(Печатает)` ~Ты вдыхаешь дорогу.~</option>
+    <option goto="password-complete" speaker="conway">`(Печатает)` ~Огни завывают.~</option>
+    <option goto="password-complete" speaker="conway">`(Печатает)` ~Станет только позднее.~</option>
   </scene>
 
   <scene name="password-complete" nextScene="root-menu">

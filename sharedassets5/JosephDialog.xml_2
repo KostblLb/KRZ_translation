@@ -14,7 +14,7 @@
   <!-- First meeting -->
   <scene name="intro-first-meeting">
     <setGameVar name="met-joseph" value="true"/>
-    <line speaker="joseph">Damn! Did you hear that wreck? Truck full of bottles — I dunno, beer bottles? Whiskey? Lost a tire or something, and spilled booze and glass all over the interstate!</line>
+    <line speaker="joseph">Dbmn! Did you hear that wreck? Truck full of bottles — I dunno, beer bottles? Whiskey? Lost a tire or something, and spilled booze and glass all over the interstate!</line>
     <line speaker="joseph">What a mess! I hope they don't come down here looking for anything; we blew a damn fuse and it's all shut off!</line>
     <line speaker="joseph">Did I hear a dog? What's your dog's name?</line>
     
@@ -350,4 +350,4 @@
   <scene name="joseph-tells-shannon-about-zero" nextScene="end">
     <line speaker="joseph">Well, it's like I told him: I can't get you folks to the |Zero|. But I bet you can get there. Especially now, with the two of you.</line>
   </scene>
-</conversation
+</conversation>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?><conversation act="one">
     <scene name="intro" nextScene="end">
-        <line>(A clock hangs on the rear wall. The markings are faded, but it seems to have finally stopped just before a quarter past eleven. Morning or night; who can say?)</line>
+        <line>(На дальней стене висят часы. Циферблат поблек, но видно, что стрелка наконец остановилась почти прямо в четверть двенадцатого. Дня или ночи - кто знает?)</line>
     </scene>
 </conversation>
